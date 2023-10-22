@@ -1,2 +1,15 @@
 # TripleTen_repo
-my projects for TripleTen DataAnalysis course 2023
+my projects for TripleTen DataAnalysis course 2023:
+AAB_analysis
+AB_test_unfinished
+AB_testing
+bank_loan
+business_analytics
+gym_churn_prediction
+product_range_analysis
+restaurant_market
+telecom_plans
+trending_videos
+used_car_sales
+videogame_market
+
