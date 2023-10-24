@@ -1,5 +1,0 @@
-Project name: Uncomplete A/B Test. 
-Task: to complete A/B test launched by predecessors and analyze its results.
-Description of the data: testing changes related to the introduction of an improved recommendation system. 
-Libraries used: pandas, numpy, datetime, seaborn, plotly, plotly.express, plotly.graph_objects, math, stats.
-Results: I found numerous issues in A/B test organization and previous analysis and resolved them where possible.EDA was conducted, conclusions about converion are made.The A/B test results were evaluated as unreliable, to get clear and reliable results some recommendations to improve the test are given. But I doubt that there is any point in repeating the test and to check the effectiveness of the improved recommendation system, since we failed to find parameters by which group B would surpass group B or at least any positive tendency in comparison.
