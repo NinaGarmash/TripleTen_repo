@@ -4,6 +4,7 @@ AAB_analysis
 AB_test_unfinished
 AB_testing
 bank_loan
+books_SQL
 business_analytics
 gym_churn_prediction
 product_range_analysis
