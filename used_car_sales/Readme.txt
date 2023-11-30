@@ -1,5 +1,5 @@
-#2. Exploratory Data Analysis Project.
-Project name: Used Car Sales
+#2. Used Car Sales. Exploratory Data Analysis Project.
+ 
 Project description
 You're an analyst at Crankshaft List. Hundreds of free advertisements for used vehicles are published on your site every day. You need to study data collected over the last few years and determine which factors influence the price of a vehicle.
 
