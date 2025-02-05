@@ -13,9 +13,15 @@ transaction history of an online store that sells household goods.
 New dataframe for per product analysis   was prepared for 4060 products, some additional parameters were calculated: revenue, max and min price, number of price variants, max and min dates of purchase, number of days on sale.  ​
 
 **Results:** ​
-	- several product ratings were developed;​
+
+	- product distribution over time is revealed;
+ 
+ 	- product categories are defined, several product ratings are developed;​
+ 
 	- products were clustered into 9 groups with rfm approach;​
-	- hypothesis about everyday products’ behavior in summer and autumn was tested;​
+ 
+	- hypothesis about everyday products’ behavior in summer and autumn are tested;​
+ 
 	- recommendations  based on ratings , products clustering and hypothesis testing results are given.​
  
 **Tableau Dashboard:**  https://public.tableau.com/views/E-CommerceProductRangeAnalysis_16944441066070/ProductRangeAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link​
