@@ -17,7 +17,7 @@ Analyze the transaction history of an online household goods store to provide re
 
 New dataframe for per product analysis was prepared for 4060 products, some additional metrics were calculated: revenue, max and min price, number of price variants, max and min dates of purchase, number of days on sale. 
 ​
-**Results:**
+###**Results:**
 - product distribution over time is revealed;
 - product categories are defined, several product ratings are developed;​ 
 - products are clustered into 9 groups with RFM approach;​
@@ -30,14 +30,13 @@ STEPS OF ANALYSIS
 
 # Step 1: Data Preprocessing  
 
--Cleaning &amp; 
-- Formatting:  
-- Standardized column names  
+- Cleaning and Formatting:  
+	- Standardized column names  
 - Handled missing values:  
 	- CustomerID: 135,080 missing values filled with 0  
 	- Description: 1,454 missing values restored where possible  
 - Converted data types where necessary  
-Removed 5,268 duplicate rows (&lt;1%)
+- Removed 5,268 duplicate rows (&lt;1%)
  
 # Step 2: Exploratory Data Analysis (EDA) 
 
@@ -194,37 +193,3 @@ We analyzed the online store’s product range, focusing on key metrics, seasona
 
 By implementing these strategies, the store can maximize revenue, reduce losses, and optimize product offerings to align with customer preferences and market trends.
 
-
-
-
-
-
-
-
-
-# E-Commerce: Product Range Analysis
-
-**Object:**
-transaction history of an online store that sells household goods.
-
-**Initial data:**  logs  containing item identifier and description, quantity, price, order date and CustomerId for 541909 transactions from 2018-11-29 to 2019-12-07.  ​
-
-**Goal:** to analyze the store’s product  range and give recommendations how to increase the revenue.​
-
-**Libraries used:** pandas, numpy, datetime, seaborn, plotly, plotly.express, plotly.graph_objects, math, stats.
-
-New dataframe for per product analysis   was prepared for 4060 products, some additional parameters were calculated: revenue, max and min price, number of price variants, max and min dates of purchase, number of days on sale.  ​
-
-**Results:** ​
-
-	- product distribution over time is revealed;
- 
- 	- product categories are defined, several product ratings are developed;​
- 
-	- products were clustered into 9 groups with rfm approach;​
- 
-	- hypothesis about everyday products’ behavior in summer and autumn are tested;​
- 
-	- recommendations  based on ratings , products clustering and hypothesis testing results are given.​
- 
-**Tableau Dashboard:**  https://public.tableau.com/views/E-CommerceProductRangeAnalysis_16944441066070/ProductRangeAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link​
