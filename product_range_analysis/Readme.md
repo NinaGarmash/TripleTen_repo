@@ -17,7 +17,8 @@ Analyze the transaction history of an online household goods store to provide re
 
 New dataframe for per product analysis was prepared for 4060 products, some additional metrics were calculated: revenue, max and min price, number of price variants, max and min dates of purchase, number of days on sale. 
 ​
-###**Results:**
+
+### **Results:**
 - product distribution over time is revealed;
 - product categories are defined, several product ratings are developed;​ 
 - products are clustered into 9 groups with RFM approach;​
@@ -28,7 +29,7 @@ New dataframe for per product analysis was prepared for 4060 products, some addi
 
 STEPS OF ANALYSIS
 
-# Step 1: Data Preprocessing  
+## Step 1: Data Preprocessing  
 
 - Cleaning and Formatting:  
 	- Standardized column names  
@@ -38,7 +39,7 @@ STEPS OF ANALYSIS
 - Converted data types where necessary  
 - Removed 5,268 duplicate rows (&lt;1%)
  
-# Step 2: Exploratory Data Analysis (EDA) 
+## Step 2: Exploratory Data Analysis (EDA) 
 
 **Transaction Overview:**
 
@@ -60,7 +61,7 @@ Sales Trends Over Time:
 	Saturday  
 	Monday
 
-# Step 3: Product-Level Analysis 
+## Step 3: Product-Level Analysis 
 
 Data was grouped by product and price in a &nbsp;
 new&nbsp;product&nbsp;df
@@ -73,14 +74,14 @@ Rows with descriptions referring to the postage or shipping fees&nbsp;were exclu
 
 Several product categories are analyzed.
 
-## A. Fixed VS Flexible Prices 
+### A. Fixed VS Flexible Prices 
 
 466 products had a fixed price, while 208 products had 8+ price variations.
 For fixed-price products the mean quantity is much smaller than that of the whole sample (21.6 VS 1308.5), so the revenue is smaller too(54.3 VS 2484.5).
 
 Flexible price products do not differ from other products by price, but the mean quantity and revenue are much greater (5337.2 VS 1308.5, 13517.2 VS 2484.5).  
 
-## B. High VS Low Prices
+### B. High VS Low Prices
 
 Top 10 and Bottom 10 products by price are found.
 
@@ -90,7 +91,7 @@ The cheapest products with negative price (returned) or zero price are mostly pr
 
 Among products with non-zero initial price there are some cheap products sold in huge quantities which bring a significant revenue - like &nbsp;POPART WOODEN PENCILS ASST - $0.12 per unit, total revenue $380.&nbsp;
 
-## C. Large VS small quantity  
+### C. Large VS small quantity  
 
 Top 10 by popularity products are found.
 
@@ -98,46 +99,46 @@ Most Sold Product: Popcorn Holder – 56,450 units
 
 Least Popular Products: 57 items were sold only once.
 
-## D. Returned Products  
+### D. Returned Products  
 
 1,119 products were returned, impacting revenue.  
 
 Most Returned Product: Travel Card Wallet I Love London – 14,418 units returned. 
 
-## E. High vs. Low Revenue Products  
+### E. High vs. Low Revenue Products  
 
 - Top Revenue Product: Regency Cakestand 3 Tier – $164,459.49  
 - Worst Revenue Product: White Cherry Lights – Revenue: -$54  
 - 19 products with negative revenue brought losses from $-0.02 to -54.00.
 - 136 products give 0 revenue (- damaged products or given for free).
   
-## F. Sales Duration  
+### F. Sales Duration  
 
 The interval between max and min dates of purchase was calculated: the mean is 276 days, max 373 days (the whole observation period).&nbsp;
 
 - Long-term Products: 1,206 products were on sale for ≥370 days.  
 - Short-term Products: 239 products were sold in 1 day, 370 products in 1 month.  
 
-## G. Everyday Products  
+### G. Everyday Products  
 
 - Number of unique purchase days  varies from 1 to 305 with the mean 69 days, the median is 47 days. The leader is WHITE HANGING HEART T-LIGHT HOLDER sold 305 days (all days the store was open).&nbsp;
 - Top 50 everyday products (sold on 270+ days) account for 15.7% of total revenue.
 -  
 So, everyday products constitute a very important category - high demand goods, most often sold through the whole year, bringing more than 15% of total revenue.
 
-# Step 4: Hypothesis Testing: The share of everyday products among all products in summer and winter is different.
+## Step 4: Hypothesis Testing: The share of everyday products among all products in summer and winter is different.
 
 The test of proportions was used with alpha 0.05 to check the hypotheses:
 - HO: The shares of everyday products in total sales(quantity, revenue) are the same in summer and autumn.
 - H1: The shares of everyday products in total sales (quantity, revenue) are different in summer and autumn.
-- 
+  
 Summer and autumn samples were compared, quantity and revenue values for total products were considered as trials, the same metrics for everyday products as successes.
 
 For both quantity and revenue we got the same result: p-value is much lower than alpha, so we should reject the null hypothesis about equality.
 
 So, the difference between the proportions is statistically significant by quantity as well as by revenue. This test results confirm that everyday products constitute a speciall group, different from other products. Its monthly quantity and revenue do not grow so much in autumn, its share among all products in summer and in autumn is different (decreasing  in autumn), and this difference is statistically significant.**
 
-# Step 5: RFM Analysis (Recency, Frequency, Monetary Value) 
+## Step 5: RFM Analysis (Recency, Frequency, Monetary Value) 
 
 Products were clustered with RFM method : values for Recency, Frequency and Monetary Value were split into ranges and labeled, each product got rfm score. In&nbsp;pr&nbsp;df we already have Frequency (=quantity) and Monetary value(= revenue) for each product. 
 
