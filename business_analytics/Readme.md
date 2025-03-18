@@ -1,4 +1,4 @@
-# #5 Project: Business Analytics. Marketing Expenses.
+# Project: Business Analytics. Marketing Expenses.
 
 **Description of the data**: Yandex.Afisha online store logs on orders and visits, data on marketing expenses.
 
